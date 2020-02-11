@@ -12,7 +12,7 @@ from torch.optim.lr_scheduler import MultiStepLR
 from torchvision import datasets, transforms
 
 from cutout import Cutout
-from ]wide_resnet import WideResNet
+from wide_resnet import WideResNet
 
 
 # Control center
