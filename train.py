@@ -85,9 +85,11 @@ if __name__ == "__main__":
     if data_augmentation:
         train_transform.transforms.append(transforms.RandomCrop(32, padding=4))
         train_transform.transforms.append(transforms.RandomHorizontalFlip())
-        train_transform.transforms.append(Cutout(n_holes=n_holes, length=length)) # cutout augemntation 
     train_transform.transforms.append(transforms.ToTensor())
     train_transform.transforms.append(normalize)
+
+    # cutout augmentation     
+    train_transform.transforms.append(Cutout(n_holes=n_holes, length=length)) # cutout augemntation 
 
     test_transform = transforms.Compose([
         transforms.ToTensor(),
