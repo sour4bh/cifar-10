@@ -21,24 +21,19 @@ batch_size = 128
 epochs = 200
 seed = 0
 
-LR_MILESTONES = [40, 60, 80, 90] # step down lr milestones
+LR_MILESTONES = [10, 20, 30] # step down lr milestones
 gamma = 0.2 #gamma for step lr 0.2 == 5x 
 learning_rate = 0.1
 
 
 data_augmentation = True
 # cutout hyperparams
-n_holes = 1
+n_holes = 2 
 length = 16
 # model - wideresnet hyperparams
 depth = 28
 widen_factor = 10
 drop_rate = 0.3
-
-
-# recover training
-resume = True
-resume_checkpoint =  'epochs/cifar10_wideresnet80.pt'
 
 def save_this(epoch, test_acc, accuracy, model, optimizer, scheduler, on_drive=True):
     checkpoint = {
@@ -134,17 +129,16 @@ if __name__ == "__main__":
 
 
     try:
-        checkpoint_fpath = resume_checkpoint
+        checkpoint_fpath = 'cifar-10/cifar10_wideresnet79.pt'
         checkpoint = torch.load(checkpoint_fpath)
         model.load_state_dict(checkpoint['state_dict'])
         optimizer.load_state_dict(checkpoint['optimizer'])
         scheduler = MultiStepLR(optimizer, milestones=LR_MILESTONES, gamma=0.2, last_epoch=checkpoint['epoch'])
         begin = checkpoint['epoch']
-        print('resuming from', begin)
         # print('test_acc :', checkpoint['test_acc'], 'train_acc :', checkpoint['train_acc'])
         # print('last_lr :', checkpoint['scheduler']['_last_lr'])
     except FileNotFoundError:
-        print('starting over..')
+        # print('starting over..')
         begin = -1
 
 

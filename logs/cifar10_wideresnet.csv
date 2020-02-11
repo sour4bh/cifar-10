@@ -1,0 +1,14 @@
+dataset,cifar10
+model,wideresnet
+batch_size,128
+epochs,200
+learning_rate,0.1
+data_augmentation,True
+cutout,True
+n_holes,1
+length,16
+no_cuda,False
+seed,0
+cuda,True
+""
+epoch,train_acc,test_acc

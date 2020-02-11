@@ -8,7 +8,7 @@ from torchvision import datasets, transforms
 from cutout import Cutout
 from wide_resnet import WideResNet
 #%%
-pt_file_path = 'cifar10_wideresnet90.pt'
+pt_file_path = 'cifar10_wideresnet93.pt'
 args_batch_size = 128
 num_classes = 10
 
