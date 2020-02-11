@@ -1,5 +1,5 @@
 # CIFAR-10
-##Image Classification on CIFAR-10 Dataset
+## Image Classification on CIFAR-10 Dataset
 
 
 In this implementation, I have used the WideResNet Architecture [[1]](https://arxiv.org/abs/1605.07146) to increase performance, I've adapted xternalz's efficent implementation [[2]](https://github.com/xternalz/WideResNet-pytorch
