@@ -38,7 +38,7 @@ The cutout regularization adds two new hyper-parameters:
 
 A model is tested on the 10,000 samples of test_batch after per-channel normalization. 
 
->The highest accuracy achieved by the model was **0.964** 
+The highest accuracy achieved by the model was **0.964** 
 with, `num_holes = 1 and length = 16`
 after which no amount of hyper-parameter tuning broke the performance ceiling.
 
