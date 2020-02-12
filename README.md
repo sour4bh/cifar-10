@@ -1,5 +1,5 @@
 # CIFAR-10
-## Image Classification on CIFAR-10 Dataset | Test Data Accuracy: 96.76%
+## Image Classification on CIFAR-10 Dataset | Test Data Accuracy: 96.82%
 
 
 In this implementation, I have used the WideResNet Architecture [[1]](https://arxiv.org/abs/1605.07146) to increase performance, I've adapted xternalz's efficent implementation [[2]](https://github.com/xternalz/WideResNet-pytorch
@@ -38,7 +38,7 @@ The cutout regularization adds two new hyper-parameters:
 
 A model is tested on the 10,000 samples of test_batch after per-channel normalization. 
 
-The highest accuracy achieved by the model was ***0.9676***
+The highest accuracy achieved by the model was ***0.9682***
 with, `num_holes = 1 and length = 16`
 after which no amount of hyper-parameter tuning broke this performance ceiling.
 
