@@ -46,6 +46,10 @@ with, `num_holes = 2` the model hits a ceiling at *0.956*
 
 Included py script test.py can be used to test .pt (torch checkpoint) for testing accuracy scores.
 
+> ##### NOTE:
+> - To see training logs, prefer the logs.csv as google colab turncates cell output after a certain buffer limit.
+> - Change the `pt_file_path` variable in test.py to test any pytorch checkpoint.
+
 
 ###### References:
 - [1] https://arxiv.org/abs/1605.07146
