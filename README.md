@@ -20,7 +20,7 @@ widen_factor = 10`
 
 Along with the afore-mentioned 'cutout', a drop-out rate of 0.3 is used to avoid over-fitting.
 
-The WiderResNet CNN model is trained on the cutout dataset for 150 epochs with an `initial learning rate of 0.1`. 
+The WiderResNet CNN model is trained on the cutout dataset for 160 epochs with an `initial learning rate of 0.1`. 
 The learning rate is step decreased at `40, 60, 80, 90 by a factor of 5x (*0.2)`
 
 A Stochastic Gradient Descent optimizer with `momentum 0.9`, a `weight decay of 5e-4`, `Nesterov momentum set to True` 
@@ -38,9 +38,9 @@ The cutout regularization adds two new hyper-parameters:
 
 A model is tested on the 10,000 samples of test_batch after per-channel normalization. 
 
-The highest accuracy achieved by the model was ***0.9674***
+The highest accuracy achieved by the model was ***0.9679***
 with, `num_holes = 1 and length = 16`
-after which no amount of hyper-parameter tuning broke the performance ceiling.
+after which no amount of hyper-parameter tuning broke this performance ceiling.
 
 with, `num_holes = 2` the model hits a ceiling at *0.956* 
 

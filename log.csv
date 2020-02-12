@@ -90,3 +90,27 @@ epoch: 147, train_acc: 0.985, test_acc: 0.9658, lr:8.00E-04
 epoch: 148, train_acc: 0.9853, test_acc: 0.9674, lr:8.00E-04
 epoch: 149, train_acc: 0.98504, test_acc: 0.9664, lr:8.00E-04
 epoch: 150, train_acc: 0.98592, test_acc: 0.9654, lr:8.00E-04
+epoch: 150, train_acc: 0.98764, test_acc: 0.967, lr:1.60E-04
+epoch: 151, train_acc: 0.98762, test_acc: 0.9658, lr:1.60E-04
+epoch: 152, train_acc: 0.98786, test_acc: 0.9658, lr:1.60E-04
+epoch: 153, train_acc: 0.98832, test_acc: 0.9662, lr:1.60E-04
+epoch: 154, train_acc: 0.98776, test_acc: 0.9668, lr:1.60E-04
+epoch: 155, train_acc: 0.98852, test_acc: 0.9654, lr:1.60E-04
+epoch: 156, train_acc: 0.98794, test_acc: 0.9669, lr:1.60E-04
+epoch: 157, train_acc: 0.98904, test_acc: 0.9664, lr:1.60E-04
+epoch: 158, train_acc: 0.98838, test_acc: 0.9661, lr:1.60E-04
+epoch: 159, train_acc: 0.98886, test_acc: 0.9659, lr:1.60E-04
+epoch: 160, train_acc: 0.98958, test_acc: 0.9655, lr:1.60E-04
+epoch: 161, train_acc: 0.9896, test_acc: 0.9663, lr:1.60E-04
+epoch: 162, train_acc: 0.98972, test_acc: 0.9664, lr:1.60E-04
+epoch: 149, train_acc: 0.98684, test_acc: 0.9659, lr:8.00E-04
+epoch: 150, train_acc: 0.98764, test_acc: 0.9668, lr:1.60E-04
+epoch: 151, train_acc: 0.98706, test_acc: 0.9674, lr:1.60E-04
+epoch: 152, train_acc: 0.98752, test_acc: 0.9676, lr:1.60E-04
+epoch: 153, train_acc: 0.988, test_acc: 0.9676, lr:1.60E-04
+epoch: 154, train_acc: 0.98732, test_acc: 0.9668, lr:1.60E-04
+epoch: 155, train_acc: 0.98846, test_acc: 0.9673, lr:3.20E-05
+epoch: 156, train_acc: 0.98934, test_acc: 0.9668, lr:3.20E-05
+epoch: 157, train_acc: 0.98866, test_acc: 0.9663, lr:3.20E-05
+epoch: 158, train_acc: 0.98932, test_acc: 0.9669, lr:3.20E-05
+
