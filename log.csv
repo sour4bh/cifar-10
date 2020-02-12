@@ -1,5 +1,3 @@
-epoch: 81, train_acc: 0.96958, test_acc: 0.9591, lr:4.00E-03
-epoch: 82, train_acc: 0.9654, test_acc: 0.9576, lr:4.00E-03
 epoch: 61, train_acc: 0.9193, test_acc: 0.9359, lr:2.00E-02
 epoch: 62, train_acc: 0.92378, test_acc: 0.9374, lr:2.00E-02
 epoch: 63, train_acc: 0.9248, test_acc: 0.9409, lr:2.00E-02
