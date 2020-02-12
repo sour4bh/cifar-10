@@ -42,7 +42,7 @@ The highest accuracy achieved by the model was ***0.9674***
 with, `num_holes = 1 and length = 16`
 after which no amount of hyper-parameter tuning broke the performance ceiling.
 
-with, `num_holes = 2` the model hits a ceiling at *0.954* 
+with, `num_holes = 2` the model hits a ceiling at *0.956* 
 
 Included py script test.py can be used to test .pt (torch checkpoint) for testing accuracy scores.
 
