@@ -7,20 +7,20 @@ In this implementation, I have used the WideResNet Architecture [[1]](https://ar
 The Image dataset is normalized by per channel mean and standard deviation. 
 
 
-###### For Data Augementation following technquies are used:
+### For Data Augementation following technquies are used:
 >- Random Cropping
 >- Random Horizontal flips
 >- Cutout Regularization
 
-###### Training:
-The wideResNet is trained on the following settings:
+### Training:
+The WideResNet is trained on the following settings:
 ` depth = 28, 
 widen_factor = 10`
 
 
 Along with the afore-mentioned 'cutout', a drop-out rate of 0.3 is used to avoid over-fitting.
 
-The WiderResNet CNN model is trained on the cutout dataset for 160 epochs with an `initial learning rate of 0.1`. 
+The WiderResNet CNN model is trained on the cutout dataset for 180 epochs with an `initial learning rate of 0.1`. 
 The learning rate is step decreased at `40, 60, 80, 90, 150, 155 by a factor of 5x (*0.2)`
 
 A Stochastic Gradient Descent optimizer with `momentum 0.9`, a `weight decay of 5e-4`, `Nesterov momentum set to True` 
@@ -34,7 +34,7 @@ The cutout regularization adds two new hyper-parameters:
 > - num_holes : the number of cutout holes to create for augmentation
 > - length : the length of the holes in dimensions
 
-###### Testing:
+### Testing:
 
 A model is tested on the 10,000 samples of test_batch after per-channel normalization. 
 
